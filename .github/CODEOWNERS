@@ -1,4 +1,4 @@
-/.github./CODEOWNERS @saesrpg/mta-creative
+/.github./CODEOWNERS @saesrpg/mta-developers
 /RPGvehicleWrapAssets/wraps @saesrpg/mta-creative
 /RPGvehicleWrapAssets/azure-pipelines.yaml @saesrpg/mta-developers
 /RPGvehicleWrapAssets/meta.xml @saesrpg/mta-developers
