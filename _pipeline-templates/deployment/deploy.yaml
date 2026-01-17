@@ -37,7 +37,7 @@ steps:
     targetType: 'inline'
     script: |
       #!/bin/bash
-      
+      ssh -i ${{ parameters.sshKeyFile }} ${{ parameters.sshUser }}@${{ parameters.sshIp }} "mkdir -p ${{ parameters.serverDirectory }}/mods/deathmatch/resources/${{ parameters.resourceName }}"
       scp -i ${{ parameters.sshKeyFile }} -r $(Pipeline.Workspace)/artifacts/${{ parameters.resourceName }}/** ${{ parameters.sshUser }}@${{ parameters.sshIp }}:${{ parameters.serverDirectory }}/mods/deathmatch/resources/${{ parameters.resourceName }}
 
 - task: ado-discord-webhook@2
