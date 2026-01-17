@@ -45,7 +45,7 @@ stages:
         artifactName: '$(resourceName)-compiled'
 
 - stage: DevServerDeploy
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/feature/wrap-assets-pipelines'))
   dependsOn: Build
   jobs:
   - job: 
