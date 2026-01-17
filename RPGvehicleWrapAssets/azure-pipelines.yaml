@@ -68,7 +68,7 @@ stages:
   - job: 
     steps:
     - checkout: none
-    - template: ../_pipeline-templates/deployment/compiled-deploy.yaml
+    - template: ../_pipeline-templates/deployment/deploy.yaml
       parameters:
         resourceName: '$(resourceName)'
         sshConnection: '$(sshConnection)'
